@@ -218,7 +218,7 @@ export default function Home() {
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <img src="/sb-logo.svg" height={28} width={28} alt="SB" />
+          <img src="/sb-logo.svg" height={35} width={35} alt="SB" />
           <span className="sans" style={{ fontSize: 16, fontWeight: 700, color: 'var(--ink)', letterSpacing: '-0.5px' }}>
             Stake<span style={{ color: 'var(--accent)' }}>Bound</span>
           </span>
