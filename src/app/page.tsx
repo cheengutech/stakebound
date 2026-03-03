@@ -217,12 +217,17 @@ export default function Home() {
         padding: '0 48px', height: 60,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <img src="/sb-logo.svg" height={35} width={35} alt="SB" />
-          <span className="sans" style={{ fontSize: 16, fontWeight: 700, color: 'var(--ink)', letterSpacing: '-0.5px' }}>
-            Stake<span style={{ color: 'var(--accent)' }}>Bound</span>
-          </span>
-        </div>
+        
+        <div style={{
+  width: 28, height: 28, background: 'var(--accent)',
+  borderRadius: 4, display: 'flex', alignItems: 'center',
+  justifyContent: 'center', fontSize: 11, fontWeight: 700,
+  color: '#ffffff', letterSpacing: 1, fontFamily: 'DM Sans'
+}}>SB</div>
+        <span className="sans" style={{ fontSize: 16, fontWeight: 700, color: 'var(--ink)', letterSpacing: '-0.5px' }}>
+  Stake<span style={{ color: 'var(--accent)' }}>Bound</span>
+</span>
+        
         <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
           {[['How it works', 'how'], ['Why it works', 'why']].map(([label, id]) => (
             <a key={id} href={`#${id}`} style={{ fontFamily: 'DM Sans', fontSize: 13, color: 'var(--muted)' }}>{label}</a>
